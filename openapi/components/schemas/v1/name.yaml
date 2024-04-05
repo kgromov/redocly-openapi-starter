@@ -1,0 +1,16 @@
+type: object
+properties:
+  prefix:
+    type: string
+    description: Name Prefix
+  firstName:
+    type: string
+    description: The first name of the customer.
+    example: Konstantin
+  lastName:
+    type: string
+    description: The last name of the customer.
+    example: Gromov
+  suffix:
+    type: string
+    description: Name Suffix
