@@ -1,0 +1,18 @@
+get:
+  tags:
+    - Customers
+  summary: Get list of customers
+  description: Get list of customers (ordered by name)
+  operationId: getCustomers
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/schemas/v1/Customers.yaml'
+    '400':
+      description: Bad request
+    '404':
+      description: User not found
+      $ref: '../../components/responses/Problem.yaml'
