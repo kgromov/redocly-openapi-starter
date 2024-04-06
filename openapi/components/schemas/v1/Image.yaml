@@ -1,20 +1,21 @@
 type: object
 properties:
   id:
-    type: string
-    format: uuid
-    description: Unique identifier of the image
+    $ref: '../common/uuid_id.yaml'
   uri:
     type: string
     format: uri
     description: URI to the image
+    minLength: 10
+    maxLength: 511
+    example: https://springframework.guru/wp-content/uploads/2019/08/spring-framework-guru-logo.jpg
   altText:
-    type: string
+    type:
+      - string
+      - 'null'
   created:
-    type: string
-    format: date-time
-    description: Date when image was created
+    $ref: '../common/iso_timestamp.yaml'
   modified:
-    type: string
-    format: date-time
-    description: Date when image was modified
+    $ref: '../common/iso_timestamp.yaml'
+required:
+  - uri

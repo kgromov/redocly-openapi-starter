@@ -1,10 +1,13 @@
 type: object
+description: Unique identifier representing a specific payment method.
 properties:
   id:
     type: string
     format: uuid
   displayName:
     type: string
+    minLength: 2
+    maxLength: 100
   cardNumber:
     type: integer
   expiryMonth:
@@ -13,9 +16,13 @@ properties:
     type: integer
   cvv:
     type: integer
-  dateCreated:
-    type: string
-    format: date-time
-  dateUpdated:
-    type: string
-    format: date-time
+  created:
+    $ref: '../common/iso_timestamp.yaml'
+  modified:
+    $ref: '../common/iso_timestamp.yaml'
+required:
+  - displayName
+  - cardNumber
+  - expiryMonth
+  - expiryYear
+  - cvv

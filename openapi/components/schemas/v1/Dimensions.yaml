@@ -4,9 +4,19 @@ properties:
   length:
     type: number
     description: Product length
+    minimum: 1
+    maximum: 999
   width:
     type: number
     description: Product width
+    minimum: 1
+    maximum: 999
   height:
     type: number
     description: Product height
+    minimum: 1
+    maximum: 999
+required:
+  - length
+  - width
+  - height
