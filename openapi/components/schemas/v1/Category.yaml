@@ -4,6 +4,7 @@ properties:
     type: string
     format: uuid
     description: Unique identifier representing a specific category
+  # candidate for enum type
   name:
     type: string
     description: Product category name
