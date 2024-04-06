@@ -1,9 +1,7 @@
 type: object
 properties:
   id:
-    type: string
-    format: uuid
-    description: The unique identifier of the order line
+    $ref: '../common/uuid_id.yaml'
   product:
     $ref: './order_product.yaml'
   order_quantity:
@@ -17,13 +15,9 @@ properties:
     minimum: 1
     maximum: 9999
   created:
-    type: string
-    format: date-time
-    description: The date the image was created
+    $ref: '../common/iso_timestamp.yaml'
   modified:
-    type: string
-    format: date-time
-    description: The date the image was updated
+    $ref: '../common/iso_timestamp.yaml'
 required:
   - product
   - order_quantity

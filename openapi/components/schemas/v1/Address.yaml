@@ -1,10 +1,7 @@
 type: object
 properties:
   id:
-    type: string
-    format: uuid
-    description: Unique identifier representing a specific customer
-    readOnly: true
+    $ref: '../common/uuid_id.yaml'
   addressLine1:
     type: string
     description: Address Line 1
@@ -32,6 +29,10 @@ properties:
     description: Zip Code
     minLength: 5
     maxLength: 6
+  created:
+    $ref: '../common/iso_timestamp.yaml'
+  modified:
+    $ref: '../common/iso_timestamp.yaml'
 required:
   - addressLine1
   - city

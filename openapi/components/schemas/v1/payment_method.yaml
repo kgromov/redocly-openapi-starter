@@ -16,12 +16,10 @@ properties:
     type: integer
   cvv:
     type: integer
-  dateCreated:
-    type: string
-    format: date-time
-  dateUpdated:
-    type: string
-    format: date-time
+  created:
+    $ref: '../common/iso_timestamp.yaml'
+  modified:
+    $ref: '../common/iso_timestamp.yaml'
 required:
   - displayName
   - cardNumber

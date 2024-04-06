@@ -1,9 +1,7 @@
 type: object
 properties:
   id:
-    type: string
-    format: uuid
-    description: Unique identifier representing a specific category
+    $ref: '../common/uuid_id.yaml'
   # candidate for enum type
   name:
     type: string
@@ -14,13 +12,9 @@ properties:
     description: Product category description
     example: Electronics and Gadgets
   created:
-    type: string
-    format: date-time
-    description: Date when category was created
+    $ref: '../common/iso_timestamp.yaml'
   modified:
-    type: string
-    format: date-time
-    description: Date when category was modified
+    $ref: '../common/iso_timestamp.yaml'
 required:
   - name
   - description

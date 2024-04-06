@@ -1,10 +1,7 @@
 type: object
 properties:
   id:
-    type: string
-    format: uuid
-    description: Unique identifier representing a specific customer
-    readOnly: true
+    $ref: '../common/uuid_id.yaml'
   name:
     $ref: './Name.yaml'
   shipToAddress:
@@ -27,6 +24,10 @@ properties:
     type: array
     items:
       $ref: './payment_method.yaml'
+  created:
+    $ref: '../common/iso_timestamp.yaml'
+  modified:
+    $ref: '../common/iso_timestamp.yaml'
 required:
   - name
   - shipToAddress
