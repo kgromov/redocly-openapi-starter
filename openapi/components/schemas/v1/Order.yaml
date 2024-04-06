@@ -18,8 +18,8 @@ properties:
   created:
     type: string
     format: date-time
-    description: The date the image was created
+    description: The date the order was created
   modified:
     type: string
     format: date-time
-    description: The date the image was updated
+    description: The date the order was updated
