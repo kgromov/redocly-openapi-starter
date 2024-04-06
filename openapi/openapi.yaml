@@ -20,8 +20,10 @@ externalDocs:
   description: "Find out how to create a GitHub repo for your OpenAPI definition."
   url: 'https://github.com/Redocly/create-openapi-repo'
 tags:
-  - name: User
-    description: "Example actions on user accounts."
+  - name: Customer
+    description: "Customer operations."
+  - name: Product
+    description: "Product operations."
 servers:
   - url: https://{tenant}/api/v1
     variables:

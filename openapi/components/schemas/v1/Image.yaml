@@ -3,13 +3,13 @@ properties:
   id:
     type: string
     format: uuid
-    description: Unique identifier representing a specific category
-  name:
+    description: Unique identifier of the image
+  uri:
     type: string
-    description: Product category name
-  description:
+    format: uri
+    description: URI to the image
+  altText:
     type: string
-    description: Product category description\
   created:
     type: string
     format: date-time

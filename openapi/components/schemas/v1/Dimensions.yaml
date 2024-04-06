@@ -1,0 +1,12 @@
+type: object
+description: The dimensions of the product (by default in cm)
+properties:
+  length:
+    type: number
+    description: Product length
+  width:
+    type: number
+    description: Product width
+  height:
+    type: number
+    description: Product height
