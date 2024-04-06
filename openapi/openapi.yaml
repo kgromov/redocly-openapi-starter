@@ -20,8 +20,12 @@ externalDocs:
   description: "Find out how to create a GitHub repo for your OpenAPI definition."
   url: 'https://github.com/Redocly/create-openapi-repo'
 tags:
-  - name: User
-    description: "Example actions on user accounts."
+  - name: Customer
+    description: "Customer operations."
+  - name: Product
+    description: "Product operations."
+  - name: Order
+    description: "Order operations."
 servers:
   - url: https://{tenant}/api/v1
     variables:
@@ -34,6 +38,14 @@ paths:
     $ref: 'paths/v1/customers.yaml'
   '/v1/customers/{id}':
     $ref: 'paths/v1/customers_{id}.yaml'
+  '/v1/products':
+    $ref: 'paths/v1/products.yaml'
+  '/v1/products/{id}':
+    $ref: 'paths/v1/products_{id}.yaml'
+  '/v1/orders':
+    $ref: 'paths/v1/orders.yaml'
+  '/v1/orders/{id}':
+    $ref: 'paths/v1/orders_{id}.yaml'
 security:
   -  basic_auth: []
 components:

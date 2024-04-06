@@ -1,16 +1,16 @@
 get:
   tags:
-    - Customer
-  summary: Get list of customers
-  description: Get list of customers (ordered by name)
-  operationId: getCustomers
+    - Order
+  summary: Get list of orders
+  description: Get list of orders
+  operationId: getOrders
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: '../../components/schemas/v1/Customers.yaml'
+            $ref: '../../components/schemas/v1/Orders.yaml'
     '400':
       description: Bad request
     '404':
