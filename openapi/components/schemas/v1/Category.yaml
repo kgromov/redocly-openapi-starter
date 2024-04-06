@@ -9,12 +9,12 @@ properties:
     description: Product category name
   description:
     type: string
-    description: Product category description\
+    description: Product category description
   created:
     type: string
     format: date-time
-    description: Date when image was created
+    description: Date when category was created
   modified:
     type: string
     format: date-time
-    description: Date when image was modified
+    description: Date when category was modified
