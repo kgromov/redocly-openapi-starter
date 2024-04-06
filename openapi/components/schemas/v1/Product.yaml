@@ -1,0 +1,27 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: Unique identifier representing a specific product
+  description:
+    type: string
+    description: Product description
+  price:
+    type: number
+    format: '\d+\[.,]\d{0,2}'
+    description: Product price
+  cost:
+    type: number
+    format: '\d+\[.,]\d{0,2}'
+    description: Product price
+  categories:
+    type: array
+    items:
+      $ref: './Category.yaml'
+  dimensions:
+    type: number
+  images:
+    type: array
+    items:
+      type: string
