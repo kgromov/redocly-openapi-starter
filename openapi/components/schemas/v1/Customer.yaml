@@ -5,11 +5,11 @@ properties:
     format: uuid
     description: Unique identifier representing a specific customer
   name:
-    $ref: './name.yaml'
+    $ref: './Name.yaml'
   shipToAddress:
-    $ref: './address.yaml'
+    $ref: './Address.yaml'
   billToAddress:
-    $ref: './address.yaml'
+    $ref: './Address.yaml'
   email:
     type: string
   phone:
