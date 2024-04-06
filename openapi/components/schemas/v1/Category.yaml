@@ -8,9 +8,11 @@ properties:
   name:
     type: string
     description: Product category name
+    example: Electronics
   description:
     type: string
     description: Product category description
+    example: Electronics and Gadgets
   created:
     type: string
     format: date-time
@@ -19,3 +21,6 @@ properties:
     type: string
     format: date-time
     description: Date when category was modified
+required:
+  - name
+  - description

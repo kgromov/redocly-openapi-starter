@@ -8,8 +8,13 @@ properties:
     type: string
     format: uri
     description: URI to the image
+    minLength: 10
+    maxLength: 511
+    example: https://springframework.guru/wp-content/uploads/2019/08/spring-framework-guru-logo.jpg
   altText:
-    type: string
+    type:
+      - string
+      - 'null'
   created:
     type: string
     format: date-time
@@ -18,3 +23,5 @@ properties:
     type: string
     format: date-time
     description: Date when image was modified
+required:
+  - uri

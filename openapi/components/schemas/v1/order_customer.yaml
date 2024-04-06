@@ -12,9 +12,12 @@ properties:
     $ref: './Address.yaml'
   email:
     type: string
+    format: email
     description: The email address of the customer
   phone:
     type: string
     description: The phone number of the customer
   selectedPaymentMethod:
     $ref: './payment_method.yaml'
+required:
+  - selectedPaymentMethod

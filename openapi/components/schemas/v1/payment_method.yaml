@@ -22,9 +22,9 @@ properties:
   dateUpdated:
     type: string
     format: date-time
-  required:
-    - displayName
-    - cardNumber
-    - expiryMonth
-    - expiryYear
-    - cvv
+required:
+  - displayName
+  - cardNumber
+  - expiryMonth
+  - expiryYear
+  - cvv
