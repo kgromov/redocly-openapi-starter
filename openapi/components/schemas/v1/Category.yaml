@@ -2,7 +2,6 @@ type: object
 properties:
   id:
     $ref: '../common/uuid_id.yaml'
-  # candidate for enum type
   name:
     type: string
     description: Product category name
@@ -11,6 +10,13 @@ properties:
     type: string
     description: Product category description
     example: Electronics and Gadgets
+  # should be rather enum type
+  category_code:
+    type: string
+    description: The category code of the product
+    minLength: 3
+    maxLength: 25
+    example: ELECTRONICS
   created:
     $ref: '../common/iso_timestamp.yaml'
   modified:
@@ -18,3 +24,4 @@ properties:
 required:
   - name
   - description
+  - category_code

@@ -14,7 +14,7 @@ get:
     '400':
       description: Bad request
     '404':
-      description: User not found
+      description: Products not found
       $ref: '../../components/responses/Problem.yaml'
 post:
   tags:
