@@ -11,7 +11,7 @@ properties:
     description: Product category description
     example: Electronics and Gadgets
   # should be rather enum type
-  category_code:
+  code:
     type: string
     description: The category code of the product
     minLength: 3
@@ -24,4 +24,4 @@ properties:
 required:
   - name
   - description
-  - category_code
+  - code
