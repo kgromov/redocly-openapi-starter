@@ -26,6 +26,8 @@ tags:
     description: "Product operations."
   - name: Order
     description: "Order operations."
+  - name: Category
+    description: "Category operations."
 servers:
   - url: https://{tenant}/api/v1
     variables:
