@@ -21,7 +21,9 @@ properties:
     format: '^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$'
     example: (093) 503-32-52
   paymentMethods:
-    type: array
+    type:
+      - array
+      - 'null' # don't know so far how to bypass this shit with fucking hibernate and mapstruct
     items:
       $ref: './payment_method.yaml'
   created:
