@@ -4,7 +4,7 @@ properties:
     $ref: '../common/uuid_id.yaml'
   uri:
     type: string
-    format: uri
+    format: url
     description: URI to the image
     minLength: 10
     maxLength: 511
