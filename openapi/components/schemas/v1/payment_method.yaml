@@ -2,8 +2,7 @@ type: object
 description: Unique identifier representing a specific payment method.
 properties:
   id:
-    type: string
-    format: uuid
+    $ref: '../common/uuid_id.yaml'
   displayName:
     type: string
     minLength: 2
