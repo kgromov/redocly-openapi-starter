@@ -2,12 +2,12 @@ type: object
 properties:
   id:
     $ref: '../common/uuid_id.yaml'
-  url:
+  uri:
     type: string
     format: url
-    description: The url of the image
-    minLength: 5
-    maxLength: 500
+    description: URI to the image
+    minLength: 10
+    maxLength: 511
     example: https://springframework.guru/wp-content/uploads/2019/08/spring-framework-guru-logo.jpg
   altText:
     type:
