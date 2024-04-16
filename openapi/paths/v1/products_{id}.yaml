@@ -29,7 +29,7 @@ put:
     -  Product
   summary: Update a product by ID
   description: Update a product by ID
-  operationId: updateProductById
+  operationId: updateProduct
   parameters:
     - name: id
       in: path
