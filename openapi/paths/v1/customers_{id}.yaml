@@ -47,7 +47,7 @@ put:
           $ref: '../../components/schemas/v1/Customer.yaml'
   responses:
     '200':
-      description: Success
+      description: Customer updated
       content:
         application/json:
           schema:

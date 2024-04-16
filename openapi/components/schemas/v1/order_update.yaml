@@ -1,0 +1,15 @@
+type: object
+properties:
+  customerId:
+    type: string
+    format: uuid
+  selectPaymentMethodId:
+    type: string
+    format: uuid
+  orderLines:
+    type: array
+    items:
+      $ref: './order_line_update.yaml'
+    description: The order lines of the order
+required:
+  - customerId
