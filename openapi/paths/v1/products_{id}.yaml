@@ -5,13 +5,7 @@ get:
   description: Get product by id
   operationId: getProductById
   parameters:
-    - name: id
-      in: path
-      description: The id of product to retrieve.
-      required: true
-      schema:
-        type: string
-        format: uuid
+    - $ref: '../../components/parameters/uuid_id.yaml'
   responses:
     '200':
       description: Success
@@ -31,13 +25,7 @@ put:
   description: Update a product by ID
   operationId: updateProduct
   parameters:
-    - name: id
-      in: path
-      description: The id of the product to update
-      required: true
-      schema:
-        type: string
-        format: uuid
+    - $ref: '../../components/parameters/uuid_id.yaml'
   requestBody:
     required: true
     content:
