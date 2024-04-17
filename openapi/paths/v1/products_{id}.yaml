@@ -16,7 +16,7 @@ get:
     '400':
       description: Bad request
     '404':
-      description: User not found
+      description: Product not found
       $ref: '../../components/responses/Problem.yaml'
 put:
   tags:
@@ -43,4 +43,20 @@ put:
       description: Bad Request
     '404':
       description: Not Found
+      $ref: '../../components/responses/Problem.yaml'
+delete:
+  tags:
+    - Product
+  summary: Delete product by id
+  description: Delete product by id
+  operationId: deleteProduct
+  parameters:
+    - $ref: '../../components/parameters/uuid_id.yaml'
+  responses:
+    '204':
+      description: No content
+    '400':
+      description: Bad request
+    '404':
+      description: Product not found
       $ref: '../../components/responses/Problem.yaml'
