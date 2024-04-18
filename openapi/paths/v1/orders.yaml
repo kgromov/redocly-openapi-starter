@@ -15,7 +15,6 @@ get:
       description: Bad request
     '404':
       description: Orders not found
-      $ref: '../../components/responses/Problem.yaml'
 post:
   tags:
     -  Order
@@ -38,4 +37,3 @@ post:
           example: /v1/orders/27ca5995-f6e1-46bb-8f18-52458b7ed96e
     '400':
       description: Bad Request
-      $ref: ../../components/responses/Problem.yaml

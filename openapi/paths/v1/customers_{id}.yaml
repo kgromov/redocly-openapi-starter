@@ -18,7 +18,6 @@ get:
       description: Bad request
     '404':
       description: Customer not found
-      $ref: '../../components/responses/Problem.yaml'
 put:
   tags:
     - Customer
@@ -44,7 +43,6 @@ put:
       description: Bad request
     '404':
       description: Customer not found
-      $ref: '../../components/responses/Problem.yaml'
 delete:
   tags:
     - Customer
@@ -60,6 +58,5 @@ delete:
       description: Bad request
     '404':
       description: Customer not found
-      $ref: '../../components/responses/Problem.yaml'
     '409':
       description: Conflict

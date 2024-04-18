@@ -17,7 +17,6 @@ get:
       description: Bad request
     '404':
       description: Product not found
-      $ref: '../../components/responses/Problem.yaml'
 put:
   tags:
     -  Product
@@ -43,7 +42,6 @@ put:
       description: Bad Request
     '404':
       description: Not Found
-      $ref: '../../components/responses/Problem.yaml'
 delete:
   tags:
     - Product
@@ -59,6 +57,5 @@ delete:
       description: Bad request
     '404':
       description: Product not found
-      $ref: '../../components/responses/Problem.yaml'
     '409':
       description: Conflict

@@ -15,7 +15,6 @@ get:
       description: Bad request
     '404':
       description: Products not found
-      $ref: '../../components/responses/Problem.yaml'
 post:
   tags:
     - Product
