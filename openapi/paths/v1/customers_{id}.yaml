@@ -61,3 +61,5 @@ delete:
     '404':
       description: Customer not found
       $ref: '../../components/responses/Problem.yaml'
+    '409':
+      description: Conflict
