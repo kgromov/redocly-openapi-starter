@@ -39,6 +39,8 @@ put:
             $ref: '../../components/schemas/v1/Order.yaml'
     '400':
       description: Bad Request
+    '404':
+      description: Order not found
 delete:
   tags:
     - Order
