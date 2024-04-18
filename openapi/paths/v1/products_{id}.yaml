@@ -60,3 +60,5 @@ delete:
     '404':
       description: Product not found
       $ref: '../../components/responses/Problem.yaml'
+    '409':
+      description: Conflict
