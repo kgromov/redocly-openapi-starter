@@ -12,9 +12,9 @@ get:
           schema:
             $ref: '../../components/schemas/v1/Products.yaml'
     '400':
-      description: Bad request
+       $ref: '../../components/responses/bad_request_400.yaml'
     '404':
-      description: Products not found
+      $ref: '../../components/responses/not_found_404.yaml'
 post:
   tags:
     - Product
@@ -37,4 +37,4 @@ post:
             format: uri
             example: '/v1/products/27ca5995-f6e1-46bb-8f18-52458b7ed96e'
     '400':
-      description: Bad request
+       $ref: '../../components/responses/bad_request_400.yaml'

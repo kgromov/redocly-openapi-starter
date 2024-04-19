@@ -1,0 +1,5 @@
+description: Bad request - the server could not process the request because of invalid syntax.
+content:
+  application/problem+json:
+    schema:
+      $ref: ../schemas/Problem.yaml
