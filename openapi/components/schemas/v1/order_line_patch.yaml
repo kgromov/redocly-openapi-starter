@@ -1,0 +1,19 @@
+type: object
+properties:
+  id:
+    $ref: '../common/uuid_id.yaml'
+  productId:
+    type:
+      - string
+      - 'null'
+    format: uuid
+  orderQuantity:
+    type:
+      - integer
+      - 'null'
+    format: int32
+    minimum: 1
+    maximum: 1000
+    example: 2
+required:
+  - id

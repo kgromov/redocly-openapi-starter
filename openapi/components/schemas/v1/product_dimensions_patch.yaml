@@ -1,0 +1,24 @@
+type: object
+description: The dimensions of the product (by default in cm)
+properties:
+  length:
+    type:
+      - integer
+      - 'null'
+    description: Product length
+    minimum: 1
+    maximum: 999
+  width:
+    type:
+      - integer
+      - 'null'
+    description: Product width
+    minimum: 1
+    maximum: 999
+  height:
+    type:
+      - integer
+      - 'null'
+    description: Product height
+    minimum: 1
+    maximum: 999

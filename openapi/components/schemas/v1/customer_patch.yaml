@@ -3,11 +3,11 @@ properties:
   id:
     $ref: '../common/uuid_id.yaml'
   name:
-    $ref: './Name.yaml'
+    $ref: './customer_name_patch.yaml'
   shipToAddress:
-    $ref: './Address.yaml'
+    $ref: './customer_address_patch.yaml'
   billToAddress:
-    $ref: './Address.yaml'
+    $ref: './customer_address_patch.yaml'
   email:
     type: [string, 'null']
     format: email
@@ -21,14 +21,12 @@ properties:
     format: '^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$'
     example: (093) 503-32-52
   paymentMethods:
-    type: array
+    type:
+      - array
+      - 'null'
     items:
       $ref: './payment_method.yaml'
   created:
     $ref: '../common/iso_timestamp.yaml'
   modified:
     $ref: '../common/iso_timestamp.yaml'
-required:
-  - name
-  - shipToAddress
-  - billToAddress

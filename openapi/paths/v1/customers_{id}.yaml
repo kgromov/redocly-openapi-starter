@@ -43,6 +43,31 @@ put:
        $ref: '../../components/responses/bad_request_400.yaml'
     '404':
      $ref: '../../components/responses/not_found_404.yaml'
+patch:
+  tags:
+    - Customer
+  summary: Patch customer
+  description: Patch customer
+  operationId: patchCustomer
+  parameters:
+    - $ref: '../../components/parameters/uuid_id.yaml'
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../components/schemas/v1/customer_patch.yaml'
+  responses:
+    '200':
+      description: Customer patched
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/schemas/v1/Customer.yaml'
+    '400':
+      $ref: '../../components/responses/bad_request_400.yaml'
+    '404':
+      $ref: '../../components/responses/not_found_404.yaml'
 delete:
   tags:
     - Customer
