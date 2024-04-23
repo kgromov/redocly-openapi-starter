@@ -15,5 +15,5 @@ properties:
       - array
       - 'null'
     items:
-      $ref: './order_line_update.yaml'
+      $ref: './order_line_patch.yaml'
     description: The order lines of the order
