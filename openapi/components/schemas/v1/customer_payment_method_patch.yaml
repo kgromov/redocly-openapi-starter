@@ -4,27 +4,22 @@ properties:
   id:
     $ref: '../common/uuid_id.yaml'
   displayName:
-    type:
-      - string
-      - 'null'
+    type: string
     minLength: 2
     maxLength: 100
+    nullable: true
   cardNumber:
-    type:
-      - integer
-      - 'null'
+    type: integer
+    nullable: true
   expiryMonth:
-    type:
-      - integer
-      - 'null'
+    type: integer
+    nullable: true
   expiryYear:
-    type:
-      - integer
-      - 'null'
+    type: integer
+    nullable: true
   cvv:
-    type:
-      - integer
-      - 'null'
+    type: integer
+    nullable: true
   created:
     $ref: '../common/iso_timestamp.yaml'
   modified:

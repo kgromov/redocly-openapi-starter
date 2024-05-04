@@ -9,17 +9,17 @@ properties:
   billToAddress:
     $ref: './Address.yaml'
   email:
-    type: [string, 'null']
+    type: string
     format: email
     minLength: 10
     maxLength: 100
     example: rocky89@ukr.net
+    nullable: true
   phone:
-    type:
-      - string
-      - 'null'
+    type: string
     format: '^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$'
     example: (093) 503-32-52
+    nullable: true
   paymentMethods:
     type: array
     items:

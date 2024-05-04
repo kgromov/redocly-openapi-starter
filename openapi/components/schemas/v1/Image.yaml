@@ -10,9 +10,8 @@ properties:
     maxLength: 511
     example: https://springframework.guru/wp-content/uploads/2019/08/spring-framework-guru-logo.jpg
   altText:
-    type:
-      - string
-      - 'null'
+    type: string
+    nullable: true
   created:
     $ref: '../common/iso_timestamp.yaml'
   modified:

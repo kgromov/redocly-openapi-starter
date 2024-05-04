@@ -1,34 +1,29 @@
-type:
-  - object
-  - 'null'
+type: object
+nullable: true
 properties:
   prefix:
-    type:
-      - string
-      - 'null'
+    type: string
     description: Name Prefix
     minLength: 0
     maxLength: 50
+    nullable: true
   firstName:
-    type:
-      - string
-      - 'null'
+    type: string
     description: The first name of the customer.
     example: Konstantin
     minLength: 2
     maxLength: 100
+    nullable: true
   lastName:
-    type:
-      - string
-      - 'null'
+    type: string
     description: The last name of the customer.
     example: Gromov
     minLength: 2
     maxLength: 100
+    nullable: true
   suffix:
-    type:
-      - string
-      - 'null'
+    type: string
     description: Name Suffix
     minLength: 0
     maxLength: 100
+    nullable: true
