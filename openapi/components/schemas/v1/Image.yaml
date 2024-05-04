@@ -6,7 +6,7 @@ properties:
     type: string
     format: url
     description: URI to the image
-    minLength: 10
+    minLength: 11
     maxLength: 511
     example: https://springframework.guru/wp-content/uploads/2019/08/spring-framework-guru-logo.jpg
   altText:
