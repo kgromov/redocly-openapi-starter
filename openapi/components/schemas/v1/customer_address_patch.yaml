@@ -1,44 +1,38 @@
-type:
-  - object
-  - 'null'
+type: object
+nullable: true
 properties:
   id:
     $ref: '../common/uuid_id.yaml'
   addressLine1:
-    type:
-      - string
-      - 'null'
+    type: string
     description: Address Line 1
     minLength: 2
     maxLength: 100
+    nullable: true
   addressLine2:
-    type:
-      - string
-      - 'null'
+    type: string
     description: Address Line 2
     minLength: 2
     maxLength: 100
+    nullable: true
   city:
-    type:
-      - string
-      - 'null'
+    type: string
     description: City
     minLength: 2
     maxLength: 100
+    nullable: true
   state:
-    type:
-      - string
-      - 'null'
+    type: string
     description: State (2 characters format)
     minLength: 2
     maxLength: 2
+    nullable: true
   zip:
-    type:
-      - string
-      - 'null'
+    type: string
     description: Zip Code
     minLength: 5
     maxLength: 6
+    nullable: true
   created:
     $ref: '../common/iso_timestamp.yaml'
   modified:

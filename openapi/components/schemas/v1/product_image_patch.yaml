@@ -3,19 +3,17 @@ properties:
   id:
     $ref: '../common/uuid_id.yaml'
   uri:
-    type:
-      - string
-      - 'null'
+    type: string
     format: url
     description: URI to the image
     minLength: 10
     maxLength: 511
     example: https://springframework.guru/wp-content/uploads/2019/08/spring-framework-guru-logo.jpg
+    nullable: true
   altText:
-    type:
-      - string
-      - 'null'
+    type: string
     minLength: 3
     maxLength: 255
+    nullable: true
 required:
   -  id

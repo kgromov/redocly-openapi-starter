@@ -1,6 +1,5 @@
-type:
-  - string
-  - 'null'   # relevant only for create operation; in perfect world it should be a separate schema - e.g. ProductRequest
+type: string
 format: uuid
 description: System generated unique identifier for the resource.
 readOnly: true
+nullable: true
