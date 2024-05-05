@@ -15,5 +15,5 @@ properties:
     maxLength: 255
     nullable: true
 required:
-  -  url
+  -  uri
   -  id
