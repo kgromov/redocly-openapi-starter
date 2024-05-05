@@ -16,5 +16,5 @@ properties:
     minLength: 3
     maxLength: 255
 required:
-  -  url
+  -  uri
   -  id
